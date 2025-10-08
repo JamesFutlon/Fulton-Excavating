@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fulton Excavating</title>
+  <meta name="description" content="Brush cutting, trenching, land clearing, gravel driveways, earth work, and tree removal in Ohio’s Miami Valley and surrounding area." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --card:#0b1220; --accent1:#fbbf24; --accent2:#f59e0b; --muted:#94a3b8; --text:#e6eef6;
+      --glass: rgba(0,0,0,0.04); --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:linear-gradient(180deg,#0a0f18 0%, #101a2a 60%); color:var(--text); line-height:1.45; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:inherit}
+    .container{max-width:var(--maxw); margin:0 auto; padding:20px 28px}
+    /* Header */
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(8px);
+            background:rgba(255,255,255,0.04); border-bottom:1px solid rgba(0,0,0,0.06)}
+    .nav{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,#fbbf24,#f59e0b); display:flex; align-items:center; justify-content:center; color:#05202a; font-weight:800}
+    nav ul{display:flex; gap:14px; list-style:none; margin:0; padding:0; align-items:center}
+    nav a{text-decoration:none; font-weight:700; opacity:0.9}
+    .contact-inline{display:flex; gap:14px; align-items:center; font-weight:800}
+    .contact-inline a{text-decoration:none}
+    .btn{background:linear-gradient(90deg,var(--accent1),var(--accent2)); color:#0b0b0b; padding:10px 14px; border-radius:10px; font-weight:800; text-decoration:none}
+    .hero{display:grid; gap:18px; align-items:center; padding:40px 0}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border-radius:18px; padding:26px; box-shadow: 0 8px 28px rgba(2,6,23,0.35)}
+    .eyebrow{color:var(--accent1); font-weight:800; letter-spacing:0.6px; text-transform:uppercase; font-size:12px}
+    h1{margin:8px 0 10px; font-size:clamp(28px,4vw,44px); line-height:1.05}
+    p.lead{color:var(--muted); margin:0 0 16px}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px}
+    .card{background:var(--card); border-radius:12px; padding:18px}
+    .card h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    /* Gallery */
+    .gallery img{width:100%; height:220px; object-fit:cover; border-radius:12px}
+    /* Contact form */
+    form{display:grid; gap:10px}
+    input, textarea{width:100%; padding:12px; border-radius:10px; border:1px solid rgba(0,0,0,0.08); background:transparent; color:inherit}
+    button{padding:10px 14px; border-radius:10px; border:0; font-weight:800; cursor:pointer; background:linear-gradient(90deg,var(--accent1),var(--accent2))}
+    footer{opacity:0.85; color:var(--muted); text-align:center; padding:30px 0}
+    /* Responsive */
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){nav ul{display:none} .grid{grid-template-columns:1fr} .contact-inline{display:none} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">FE</div>
+        <div>
+          <div style="font-weight:900">Fulton Excavating</div>
+          <div class="muted" style="font-size:12px">Veteran‑owned & operated • Ohio’s Miami Valley and surrounding area</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-inline">
+        <a href="tel:+19372865884">(937) 286-5884</a>
+        <span class="muted">•</span>
+        <a href="mailto:FultonExcavatingLLC@gmail.com">FultonExcavatingLLC@gmail.com</a>
+        <a class="btn" href="#contact">Request a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-card">
+      <div>
+        <div class="eyebrow">Miami Valley • Local Service</div>
+        <h1>Professional Excavation & Land Services</h1>
+        <p class="lead">Fulton Excavating delivers reliable, high‑quality results — from brush cutting and trenching to land clearing, gravel driveways, earth work, and tree removal. Built on precision, efficiency, and a veteran work ethic.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap">
+          <a class="btn" href="#contact">Get My Free Estimate</a>
+          <a style="align-self:center; color:var(--muted); text-decoration:underline" href="tel:+19372865884">Tap to Call</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:24px">
+      <h2 style="margin:0 0 10px">About Fulton Excavating</h2>
+      <div class="card">
+        <p class="muted">We’re a veteran‑owned & operated small business serving Ohio’s Miami Valley and surrounding area. With 2 years in business and professional equipment, we focus on clean grades, solid drainage, and safe, efficient project delivery.</p>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:24px">
+      <h2 style="margin:0 0 10px">Services</h2>
+      <div class="grid">
+        <div class="card"><h3>Brush Cutting</h3><p class="muted">Clear overgrowth and brush to reclaim usable land and improve sightlines.</p></div>
+        <div class="card"><h3>Trenching</h3><p class="muted">Precision trenching for utilities, drainage, and foundations.</p></div>
+        <div class="card"><h3>Land Clearing</h3><p class="muted">Tree, stump, and debris removal to prep for building or landscaping.</p></div>
+        <div class="card"><h3>Gravel Driveways</h3><p class="muted">New installs and repairs with proper grading and compaction.</p></div>
+        <div class="card"><h3>Earth Work</h3><p class="muted">Grading, leveling, and shaping for pads, yards, and access roads.</p></div>
+        <div class="card"><h3>Tree Removal</h3><p class="muted">Safe removal of unwanted or hazardous trees and limbs.</p></div>
+      </div>
+    </section>
+
+    <section id="gallery" style="margin-top:24px">
+      <h2 style="margin:0 0 10px">Recent Projects</h2>
+      <div class="grid gallery">
+        <img src="https://picsum.photos/seed/excavator/800/600" alt="Excavator at work">
+        <img src="https://picsum.photos/seed/trenching/800/600" alt="Utility trenching">
+        <img src="https://picsum.photos/seed/landclearing/800/600" alt="Land clearing project">
+        <img src="https://picsum.photos/seed/driveway/800/600" alt="Gravel driveway installation">
+        <img src="https://picsum.photos/seed/earthwork/800/600" alt="Earth work and grading">
+        <img src="https://picsum.photos/seed/treeremoval/800/600" alt="Tree removal service">
+      </div>
+      <p class="muted" style="margin-top:8px">Replace these placeholders later with your own photos by uploading images to your repository and updating the <code>src</code> URLs.</p>
+    </section>
+
+    <section id="contact" style="margin-top:24px">
+      <h2 style="margin:0 0 10px">Contact</h2>
+      <div class="card" style="display:grid; grid-template-columns:1fr 320px; gap:16px">
+        <div>
+          <form id="contactForm">
+            <input id="name" placeholder="Your name" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <input id="subject" placeholder="Subject" />
+            <textarea id="message" rows="6" placeholder="Tell us about your project" required></textarea>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <button type="submit">Send Message</button>
+              <a class="btn" href="tel:+19372865884" style="display:inline-block; text-decoration:none">Call (937) 286-5884</a>
+            </div>
+            <div id="formMsg" class="muted" style="margin-top:8px"></div>
+          </form>
+        </div>
+        <div style="padding:12px; background:rgba(0,0,0,0.05); border-radius:10px">
+          <div style="font-weight:800; margin-bottom:8px">Fulton Excavating</div>
+          <div class="muted">Veteran‑owned & operated • Serving Ohio’s Miami Valley and surrounding area</div>
+          <div class="muted" style="margin-top:8px">Phone: <a href="tel:+19372865884">(937) 286-5884</a></div>
+          <div class="muted">Email: <a href="mailto:FultonExcavatingLLC@gmail.com">FultonExcavatingLLC@gmail.com</a></div>
+          <div style="margin-top:12px; color:var(--muted); font-size:13px">We respond promptly during business hours.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Fulton Excavating — Veteran‑owned & operated. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const emailVal = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim() || 'Service inquiry';
+      const message = document.getElementById('message').value.trim();
+      if(!name || !emailVal || !message){ formMsg.textContent = 'Please fill in required fields.'; return }
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${emailVal}\n\n${message}`);
+      const mailto = `mailto:FultonExcavatingLLC@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
